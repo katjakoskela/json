@@ -1,32 +1,35 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JSON</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="tyylit.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<body>
-    <nav>
-        <div class="menu-icon" onclick="toggleMenu()">☰</div>
-        <ul id="nav-links">
-            <li><a href="etusivu.html">Etusivu</a></li>
-            <li><a href="digi-cafe.html">Digi Cafe</a></li>
-            <li><a href="palaveri.html">Palaveri</a></li>
-            <li><a href="tyopaikat.html">Työpaikat</a></li>
-        </ul>
-    </nav>
-    <div class="content">
-        <h1>Tervetuloa!</h1>
-        <p>Tämä on navigointiesimerkin sisältösivu. Valitse linkki navigaatiosta siirtyäksesi eri osioihin.</p>
-    </div>
 
-    <script>
-        function toggleMenu() {
-            const navLinks = document.getElementById("nav-links");
-            navLinks.classList.toggle("active");
-        }
-    </script>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  <a href="digi-cafe.html">News</a>
+  <a href="palaveri.html">Contact</a>
+  <a href="tyopaikat.html">About</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div id="vastaus"></div>
+  <script src="etusivu.js"></script>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
 </body>
 </html>
