@@ -1,0 +1,28 @@
+/* Yleinen tyyli */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigoinnin tyyli */
+nav {
+    background-color: #4CAF50;
+    padding: 10px 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Sisältöosan tyyli */
+.content {
+    padding: 20px;
+}
