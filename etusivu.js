@@ -23,7 +23,13 @@ function kerro (data){
     teksti = "<h1>" + data.otsikko + "</h1>";
     teksti = teksti + "<p>" + data.kuvaus + "</p>";
     teksti = teksti + "<p><img src='" + data.kuva + "' alt='kuva' ></p>";
-    teksti = teksti + "<h3>Opintojakso: " + data.opintojakso.nimi + " " + data.opintojakso.tunnus + " " + data.opintojakso.opintopisteet + "</h3>";
+    teksti = teksti + "<h3>Opintojakso: " + data.opintojakso.nimi + " " + data.opintojakso.tunnus + " " + data.opintojakso.opintopisteet + "op" + "</h3>";
+//taulukko
+    teksti = teksti + "<ul>"
+for(var i = 0; i < data.sisalto.length; i++) {
+teksti = teksti + "<li>" + data.sisalto[i] + "</li>";
+}
+teksti = teksti + "</ul>"
 
 //tulostus sivulle
 document.getElementById("vastaus").innerHTML = teksti;
