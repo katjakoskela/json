@@ -21,7 +21,7 @@ function kerro (data){
     //muuttuja tejsti, johon tulostettava tieto kerätään
     var teksti="";
     teksti = "<h1>"+data.otsikko+"</h1>";
-}
 
 //tulostus sivulle
 document.getElementById("vastaus").innerHTML=teksti;
+}
