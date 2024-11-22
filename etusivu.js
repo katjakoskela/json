@@ -23,6 +23,7 @@ function kerro (data){
     teksti = "<h1>" + data.otsikko + "</h1>";
     teksti = teksti + "<p>" + data.kuvaus + "</p>";
     teksti = teksti + "<p><img src='" + data.kuva + "' alt='kuva' ></p>";
+    teksti = teksti + "<h3>Opintojakso: " + data.opintojakso.nimi + " " + data.opintojakso.tunnus + " " + data.opintojakso.opintopisteet + "</h3>";
 
 //tulostus sivulle
 document.getElementById("vastaus").innerHTML = teksti;
