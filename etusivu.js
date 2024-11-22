@@ -20,8 +20,9 @@ document.getElementById("vastaus").innerHTML =
 function kerro (data){
     //muuttuja tejsti, johon tulostettava tieto kerätään
     var teksti="";
-    teksti = "<h1>"+data.otsikko+"</h1>";
+    teksti = "<h1>" + data.otsikko + "</h1>";
+    teksti = teksti + "<p>" + data.kuvaus + "</p>";
 
 //tulostus sivulle
-document.getElementById("vastaus").innerHTML=teksti;
+document.getElementById("vastaus").innerHTML = teksti;
 }
