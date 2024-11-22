@@ -37,7 +37,7 @@ function kerro (data){
     //objektitaulukko
     teksti = teksti + "<h3>Linkit</h3><ul>";
     for(var i =0; i<data.tekniikat.lenght; i++){
-        teksti = teksti + "<li>" + data.tekniikat[i].aihe + " " + "<a href='data.tekniikat[i].linkki'>" + + data.tekniikat[i].linkki + "</a></li>";
+        teksti = teksti + "<li>" + data.tekniikat[i].aihe + " " + "<a href='data.tekniikat[i].linkki'>" + data.tekniikat[i].linkki + "</a></li>";
     }
 
 
