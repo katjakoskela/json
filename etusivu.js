@@ -22,6 +22,7 @@ function kerro (data){
     var teksti="";
     teksti = "<h1>" + data.otsikko + "</h1>";
     teksti = teksti + "<p>" + data.kuvaus + "</p>";
+    teksti = teksti + "<p><img src='" + data.kuva + "' alt='kuva' ></p>";
 
 //tulostus sivulle
 document.getElementById("vastaus").innerHTML = teksti;
