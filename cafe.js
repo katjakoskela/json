@@ -8,7 +8,7 @@ return response.json();
 // Käsitellään muunnettu (eli JSON muotoinen) vastaus
 .then(function (responseJson){
 // Kutsutaan funktiota ja välitetään sille json-vastaus
-/ Testataan onnistuuko json-luku
+// Testataan onnistuuko json-luku
 // jos onnistuu päivitetään tähän json-datan käsittelevän funktion kutsu
 document.getElementById("vastaus").innerHTML =
 "<p>Jatketaan harjoitusta</p>";
