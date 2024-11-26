@@ -32,19 +32,19 @@ function kerro(data) {
         <p>Sähköposti: <a href="mailto:${data.yhteystiedot.email}">${data.yhteystiedot.email}</a></p>
     `;
 
-    // Tuotteet
-    teksti += `<h2>Tuotteet</h2><ul>`;
-    data.tuotteet.forEach(tuote => {
-        teksti += `<li>${tuote}</li>`;
-    });
-    teksti += `</ul>`;
+    // Tuotteet-taulukko
+    teksti += "<h3>Tuotteet</h3><ul>";
+    for (let i = 0; i < data.tuotteet.length; i++) {
+        teksti += `<li>${data.tuotteet[i]}</li>`;
+    }
+    teksti += "</ul>";
 
-    // Henkilökunta
-    teksti += `<h2>Henkilökunta</h2><ul>`;
-    data.henkilokunta.forEach(henkilo => {
-        teksti += `<li>${henkilo.nimi} - ${henkilo.titteli}</li>`;
-    });
-    teksti += `</ul>`;
+    // Henkilökunta-taulukko
+    teksti += "<h3>Henkilökunta</h3><ul>";
+    for (let i = 0; i < data.henkilokunta.length; i++) {
+        teksti += `<li>${data.henkilokunta[i].nimi} - ${data.henkilokunta[i].titteli}</li>`;
+    }
+    teksti += "</ul>";
 
     // Tulostus sivulle
     document.getElementById("vastaus").innerHTML = teksti;
