@@ -2,10 +2,10 @@
   "palaveri": {
     "aihe": "Tuotekehityksen viikkopalaveri",
     "osallistujat": {
-      "lukumaara": 5,
-      "nimet": ["Mikko Mallikas", "Anna Malli", "Esa Merkki", "Laura Laine", "Kalle Kuusi"]
+      "lukumaara": 3,
+      "nimet": ["Mikko Mallikas", "Anna Malli", "Esa Merkki"]
     },
-    "paikka": "Haaga-Helia, Pasilan kamppus, luokka 4009",
+    "paikka": "Tico cafe, Ratapihantie 13, Helsinki",
     "alkaminen": "2025-12-12T10:00:00",
     "kesto": "1h 30min"
   }
