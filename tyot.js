@@ -21,15 +21,28 @@ document.getElementById("vastaus").innerHTML =
 })
 
 // Funktio tietojen näyttämiseksi
-//function kerro(data) {
-    //var teksti = "";
+function kerro(data) {
+    var teksti = "";
 
     // Otsikko
-    //teksti = "<h1>Vantaan kaupungin opetusalan avoimet työpaikat</h1>";
-
-
+    teksti = "<h1>Vantaan kaupungin opetusalan avoimet työpaikat</h1>";
+    
+    // Käydään läpi JSON-data ja luodaan lista
+            teksti = teksti + "<ul>";
+            for (var i = 0; i < data.length; i++) {
+                teksti += "<li>";
+                teksti += "<h3>" + data[i].tyotehtava + "</h3><br>";
+                teksti += "<p>" + data[i].ammattiala + "</p><br>";
+                teksti += "<p>" + data[i].organisaatio + "</p><br>";
+                teksti += "<p>" + data[i].tyoavain + "</p><br>";
+                teksti += "<p>" + data[i].osoite + "</p><br>";
+                teksti += "<p>" + data[i].haku_paattyy_pvm + "</p><br>";
+                teksti += "<a href='" + data[i].linkki + "' target='_blank'>Lue lisää</a>";
+                teksti += "</li>";
+            }
+            teksti += "</ul>";
 
     // Tulostus sivulle
-    //document.getElementById("vastaus").innerHTML = teksti;
+    document.getElementById("vastaus").innerHTML = teksti;
 
-//}
+}
