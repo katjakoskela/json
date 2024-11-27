@@ -7,7 +7,7 @@ return response.json();
 
 // Käsitellään muunnettu (eli JSON muotoinen) vastaus
 .then(function (responseJson){
-// Testataan onnistuuko json-luku
+
 // Kutsutaan funktiota ja välitetään sille json-vastaus
 kerro(responseJson);
 })
