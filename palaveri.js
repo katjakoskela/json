@@ -24,15 +24,15 @@ function kerro(data) {
   // Osallistujat
   teksti = teksti + "<h3>Osallistujat (" + data.lukumaara + "):</h3><ul>";
   for (var i = 0; i < data.nimet.length; i++) {
-    teksti = teksti + "<li>" + data.nimet[i] + "</li>";
+    teksti += + "<li>" + data.nimet[i] + "</li>";
   }
-  teksti = teksti + "</ul>";
+  teksti += + "</ul>";
 
   // Paikka ja aika
-  teksti = teksti + "<h3>Paikka ja aika</h3>";
-  teksti = teksti + "<p>Paikka: " + data.paikka + "</p>";
-  teksti = teksti + "<p>Alkamis aika: " + data.alkaminen + "</p>";
-  teksti = teksti + "<p>Kesto: " + data.kesto + "</p>";
+  teksti += + "<h3>Paikka ja aika</h3>";
+  teksti += + "<p>Paikka: " + data.paikka + "</p>";
+  teksti += + "<p>Alkamis aika: " + data.alkaminen + "</p>";
+  teksti += + "<p>Kesto: " + data.kesto + "</p>";
 
   // Tulostus sivulle
   document.getElementById("vastaus").innerHTML = teksti;
