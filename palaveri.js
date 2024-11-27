@@ -31,5 +31,10 @@ function kerro(data) {
     }
     teksti = teksti + "</ul>";
 
+    // Paikka ja aika
+    teksti = teksti + "<h3>Paikka ja aika</h3>";
+    teksti = teksti + "<p>Paikka: " + data.paikka + "</p>";
+    teksti = teksti + "<p>Alkamis aika: " + data.alkaminen + "</p>";
+    teksti = teksti + "<p>Kesto: " + data.kesto + "</p>";
 
 }
