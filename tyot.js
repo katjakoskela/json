@@ -14,21 +14,21 @@ document.getElementById("vastaus").innerHTML =
 })
 
 // Jos tuli jokin virhe
-.catch(function (error) {
-document.getElementById("vastaus").innerHTML =
-"<p>Tietoa ei pystytä hakemaan</p>";
-})
+//.catch(function (error) {
+//document.getElementById("vastaus").innerHTML =
+//"<p>Tietoa ei pystytä hakemaan</p>";
+//})
 
 // Funktio tietojen näyttämiseksi
-function kerro(data) {
-    var teksti = "";
+//function kerro(data) {
+    //var teksti = "";
 
     // Otsikko
-    teksti = "<h1>Vantaan kaupungin opetusalan avoimet työpaikat</h1>";
+    //teksti = "<h1>Vantaan kaupungin opetusalan avoimet työpaikat</h1>";
 
 
 
     // Tulostus sivulle
-    document.getElementById("vastaus").innerHTML = teksti;
+    //document.getElementById("vastaus").innerHTML = teksti;
 
-}
+//}
