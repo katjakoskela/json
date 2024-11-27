@@ -19,7 +19,7 @@ document.getElementById("vastaus").innerHTML =
 
 // Funktio tietojen näyttämiseksi
 function kerro(data) {
-    let teksti = "";
+    var teksti = "";
 
     // Yhteystiedot
     teksti = "<h1>" + data.yritys + "</h1>";
