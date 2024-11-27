@@ -14,10 +14,10 @@ document.getElementById("vastaus").innerHTML =
 })
 
 // Jos tuli jokin virhe
-//.catch(function (error) {
-//document.getElementById("vastaus").innerHTML =
-//"<p>Tietoa ei pystytä hakemaan</p>";
-//})
+.catch(function (error) {
+document.getElementById("vastaus").innerHTML =
+"<p>Tietoa ei pystytä hakemaan</p>";
+})
 
 // Funktio tietojen näyttämiseksi
 //function kerro(data) {

@@ -20,26 +20,26 @@ document.getElementById("vastaus").innerHTML =
 })
 
 // Funktio tietojen näyttämiseksi
-function kerro(data) {
-    var teksti = "";
+//function kerro(data) {
+  //  var teksti = "";
 
     // Palaverin aihe
-    teksti = "<h1>" + data.aihe + "</h1>";
+ //   teksti = "<h1>" + data.aihe + "</h1>";
 
     // Osallistujat
-    teksti = teksti + "<h3>Osallistujat (" + data.lukumaara + "):</h3><ul>";
-    for (var i = 0; i < data.nimet.length; i++) {
-        teksti = teksti + "<li>" + data.nimet[i] + "</li>";
-    }
-    teksti = teksti + "</ul>";
+   // teksti = teksti + "<h3>Osallistujat (" + data.lukumaara + "):</h3><ul>";
+    //for (var i = 0; i < data.nimet.length; i++) {
+      //  teksti = teksti + "<li>" + data.nimet[i] + "</li>";
+    //}
+ //   teksti = teksti + "</ul>";
 
     // Paikka ja aika
-    teksti = teksti + "<h3>Paikka ja aika</h3>";
-    teksti = teksti + "<p>Paikka: " + data.paikka + "</p>";
-    teksti = teksti + "<p>Alkamis aika: " + data.alkaminen + "</p>";
-    teksti = teksti + "<p>Kesto: " + data.kesto + "</p>";
+   // teksti = teksti + "<h3>Paikka ja aika</h3>";
+ //   teksti = teksti + "<p>Paikka: " + data.paikka + "</p>";
+ //   teksti = teksti + "<p>Alkamis aika: " + data.alkaminen + "</p>";
+ //   teksti = teksti + "<p>Kesto: " + data.kesto + "</p>";
 
     // Tulostus sivulle
-    document.getElementById("vastaus").innerHTML = teksti;
+   // document.getElementById("vastaus").innerHTML = teksti;
 
-}
+//}
