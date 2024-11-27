@@ -25,7 +25,7 @@ function kerro(data) {
     teksti = "<h1>" + data.aihe + "</h1>";
 
     // Osallistujat
-    teksti = teksti + "<h3>Osallistujat (" + data.lukumaara + "<h3>): " + "</h3><ul>";
+    teksti = teksti + "<h3>Osallistujat (" + data.lukumaara + "):</h3><ul>";
     for (var i = 0; i < data.nimet.length; i++) {
         teksti = teksti + "<li>" + data.nimet[i] + "</li>";
     }
