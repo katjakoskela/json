@@ -20,16 +20,7 @@ function kerro(data) {
     teksti = "<h1>" + data.otsikko + "</h1>";
     teksti = teksti + "<p>" + data.kuvaus + "</p>";
     teksti = teksti + "<p><img src='" + data.kuva + "' alt='kuva'></p>";
-    teksti =
-        teksti +
-        "<h3>Opintojakso: " +
-        data.opintojakso.nimi +
-        " " +
-        data.opintojakso.tunnus +
-        " " +
-        data.opintojakso.opintopisteet +
-        "op" +
-        "</h3>";
+    teksti = teksti + "<h3>Opintojakso: " + data.opintojakso.nimi + " " + data.opintojakso.tunnus + " " + data.opintojakso.opintopisteet + "op" + "</h3>";
 
     // Taulukko
     teksti = teksti + "<ul>";

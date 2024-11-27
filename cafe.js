@@ -21,16 +21,11 @@ document.getElementById("vastaus").innerHTML =
 function kerro(data) {
     let teksti = "";
 
-    // Yrityksen nimi
-    teksti += `<h1>${data.yritys}</h1>`;
-
     // Yhteystiedot
-    teksti += `
-        <h2>Yhteystiedot</h2>
-        <p>Osoite: ${data.yhteystiedot.osoite}</p>
-        <p>Puhelin: ${data.yhteystiedot.puhelin}</p>
-        <p>Sähköposti: <a href="mailto:${data.yhteystiedot.email}">${data.yhteystiedot.email}</a></p>
-    `;
+    teksti += "<h1>" + data.yritys + "</h1>";
+    teksti += "<p>Osoite: " + data.yhteystiedot.osoite + "</p>";
+    teksti += "<p>Puhelin: " + data.yhteystiedot.puhelin + "</p>";
+    teksti += '<p>Email: <a href="mailto:' + data.yhteystiedot.email + '">' + data.yhteystiedot.email + "</a></p>";
 
     // Tuotteet-taulukko
     teksti += "<h3>Tuotteet</h3><ul>";
