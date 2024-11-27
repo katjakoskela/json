@@ -37,4 +37,7 @@ function kerro(data) {
     teksti = teksti + "<p>Alkamis aika: " + data.alkaminen + "</p>";
     teksti = teksti + "<p>Kesto: " + data.kesto + "</p>";
 
+    // Tulostus sivulle
+    document.getElementById("vastaus").innerHTML = teksti;
+
 }
