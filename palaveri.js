@@ -16,3 +16,20 @@ kerro(responseJson);
 document.getElementById("vastaus").innerHTML =
 "<p>Tietoa ei pystytä hakemaan</p>";
 })
+
+// Funktio tietojen näyttämiseksi
+function kerro(data) {
+    var teksti = "";
+
+    // Palaverin aihe
+    teksti = "<h1>" + data.aihe + "</h1>";
+
+    // Osallistujat
+    teksti = teksti + "<h3>Osallistujat (" + data.lukumaara + "<h3>): " + "</h3><ul>";
+    for (var i = 0; i < data.nimet.length; i++) {
+        teksti = teksti + "<li>" + data.nimet[i] + "</li>";
+    }
+    teksti = teksti + "</ul>";
+
+
+}
