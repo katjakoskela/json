@@ -1,4 +1,4 @@
-fetch('http://gis.vantaa.fi/rest/tyopaikat/v1/Opetusala')
+fetch('https://gis.vantaa.fi/rest/tyopaikat/v1/Opetusala')
     .then(function (response) {
         return response.json(); // Muutetaan vastaus JSON-muotoon
     })
