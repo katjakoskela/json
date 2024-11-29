@@ -15,18 +15,15 @@ fetch('http://gis.vantaa.fi/rest/tyopaikat/v1/Opetusala')
 
 // Funktio tietojen näyttämiseksi
 function kerro(data) {
-    let teksti = "<h1>Vantaan kaupungin opetusalan avoimet työpaikat</h1>";
+    var teksti = "";
+    teksti = "<ul>";
     
-    // Käydään läpi JSON-data ja luodaan lista
-    teksti += "<ul>";
-    for (let i = 0; i < data.length; i++) {
-        teksti += "<h3>" + data[i].tyotehtava + "</h3>";
-        teksti += "<p>" + data[i].osoite + "</p>";
-        teksti += "<p>Hakuaika päättyy: " + data[i].haku_paattyy_pvm + "</p>";
-        teksti += "<a href='" + data[i].linkki + "' target='_blank'>Lue lisää</a>";
+    // Luodaan lista
+    for (var i=0; i<data.lenght; i++){
+        teksti = teksti + "<li>" + data.tyotehtava[i]+ "</li>";
     }
-    teksti += "</ul>";
     
+    teksti = teksti + "</ul>";
     // Näytetään data sivulla
     document.getElementById("vastaus").innerHTML = teksti;
 }
