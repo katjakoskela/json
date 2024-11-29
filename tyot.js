@@ -20,12 +20,10 @@ function kerro(data) {
     // Käydään läpi JSON-data ja luodaan lista
     teksti += "<ul>";
     for (let i = 0; i < data.length; i++) {
-        teksti += "<li>";
         teksti += "<h3>" + data[i].tyotehtava + "</h3>";
         teksti += "<p>" + data[i].osoite + "</p>";
         teksti += "<p>Hakuaika päättyy: " + data[i].haku_paattyy_pvm + "</p>";
         teksti += "<a href='" + data[i].linkki + "' target='_blank'>Lue lisää</a>";
-        teksti += "</li>";
     }
     teksti += "</ul>";
     
