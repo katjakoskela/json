@@ -30,17 +30,11 @@ function kerro(data) {
     // Käydään läpi JSON-data ja luodaan lista
             teksti = teksti + "<ul>";
             for (var i = 0; i < data.length; i++) {
-                teksti += "<li>";
-                teksti += "<h3>" + data[i].tyotehtava + "</h3><br>";
-                teksti += "<p>" + data[i].ammattiala + "</p><br>";
-                teksti += "<p>" + data[i].organisaatio + "</p><br>";
-                teksti += "<p>" + data[i].tyoavain + "</p><br>";
-                teksti += "<p>" + data[i].osoite + "</p><br>";
-                teksti += "<p>" + data[i].haku_paattyy_pvm + "</p><br>";
-                teksti += "<a href='" + data[i].linkki + "' target='_blank'>Lue lisää</a>";
-                teksti += "</li>";
+                teksti = teksti + "<h3>" + data[i].tyotehtava + "</h3><br>";
+                teksti = teksti + "<p>" + data[i].osoite + "</p><br>";
+                teksti = teksti + "<a href='" + data[i].linkki + "' target='_blank'>Lue lisää</a>";
             }
-            teksti += "</ul>";
+            teksti = teksti + "</ul>";
 
     // Tulostus sivulle
     document.getElementById("vastaus").innerHTML = teksti;
