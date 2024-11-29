@@ -24,7 +24,7 @@ fetch('https://raw.githubusercontent.com/katjakoskela/json/refs/heads/main/palav
     // Osallistujat
     teksti = teksti + "<h3>Osallistujat (" + data.lukumaara + "):</h3><ul>";
     for (var i = 0; i < data.nimet.length; i++) {
-      teksti += "<li>" + data.nimet[i] + "</li>";
+      teksti = teksti + "<li>" + data.nimet[i] + "</li>";
     }
     teksti = teksti + "</ul>";
   
