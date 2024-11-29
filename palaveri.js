@@ -14,25 +14,32 @@ fetch('https://raw.githubusercontent.com/katjakoskela/json/refs/heads/main/palav
       "<p>Tietoa ei pystytä hakemaan: " + error.message + "</p>";
   });
   
-  // funktio tietojen näyttämiseksi
   function kerro(data) {
     var teksti = "";
-  
+
+    // Pääsy JSON-olion "palaveri"-avaimeen
+    var palaveri = data.palaveri;
+
     // Palaverin aihe
-    teksti = teksti + "<h1>" + data.aihe + "</h1>";
-  
+    teksti = teksti + "<h1>" + palaveri.aihe + "</h1>";
+
     // Osallistujat
-    teksti = teksti + "<h3>Osallistujat (" + data.lukumaara + "):</h3><ul>";
-    for (var i = 0; i < data.nimet.length; i++) {
-      teksti = teksti + "<li>" + data.nimet[i] + "</li>";
+    teksti = teksti + "<h3>Osallistujat (" + palaveri.osallistujat.lukumaara + "):</h3><ul>";
+    for (var i = 0; i < palaveri.osallistujat.nimet.length; i++) {
+        teksti = teksti + "<li>" + palaveri.osallistujat.nimet[i] + "</li>";
     }
     teksti = teksti + "</ul>";
-  
+
     // Paikka ja aika
-    teksti = "<h3>Paikka ja aika</h3>";
-    teksti = teksti + "<p>Paikka: " + data.paikka + "</p>";
-    teksti = teksti + "<p>Alkamis aika: " + data.alkaminen + "</p>";
-    teksti = teksti + "<p>Kesto: " + data.kesto + "</p>";
+    teksti = teksti + "<h3>Paikka ja aika</h3>";
+    teksti = teksti + "<p>Paikka: " + palaveri.paikka + "</p>";
+    teksti = teksti + "<p>Alkamis aika: " + palaveri.alkaminen + "</p>";
+    teksti = teksti + "<p>Kesto: " + palaveri.kesto + "</p>";
+
+    // Tulostus sivulle
+    document.getElementById("vastaus").innerHTML = teksti;
+}
+
   
     // Tulostus sivulle
     document.getElementById("vastaus").innerHTML = teksti;
