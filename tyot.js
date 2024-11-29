@@ -1,4 +1,4 @@
-fetch('http://gis.vantaa.fi/rest/tyopaikat/v1/Tekninen%20ala')
+fetch('https://gis.vantaa.fi/rest/tyopaikat/v1/Tekninen%20ala')
 
 
 // Muunnetaan vastaus JSON muotoon
