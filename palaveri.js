@@ -39,8 +39,3 @@ fetch('https://raw.githubusercontent.com/katjakoskela/json/refs/heads/main/palav
     // Tulostus sivulle
     document.getElementById("vastaus").innerHTML = teksti;
 }
-
-  
-    // Tulostus sivulle
-    document.getElementById("vastaus").innerHTML = teksti;
-  }
