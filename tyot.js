@@ -1,4 +1,4 @@
-fetch('https://cors-anywhere.herokuapp.com/http://gis.vantaa.fi/rest/tyopaikat/v1/Opetusala')
+fetch('http://gis.vantaa.fi/rest/tyopaikat/v1/Tekninen%20ala')
 
 
 // Muunnetaan vastaus JSON muotoon
